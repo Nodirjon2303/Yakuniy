@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in baza %}
+    <div>
+        <a href="{{ i.baza.url }}">
+    <h1>{{ i.fan.name }}</h1>
+            </a>
+    </div>
+    <div>
+    <i>{{ i.description }}</i>
+    </div>
+
+{% endfor %}
+
+</body>
+</html>

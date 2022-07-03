@@ -11,6 +11,7 @@ class Fanlar(models.Model):
 class Baza(models.Model):
     fan = models.ForeignKey(Fanlar, models.CASCADE)
     baza = models.FileField(upload_to='baza savollar')
+    description = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.fan.name}"

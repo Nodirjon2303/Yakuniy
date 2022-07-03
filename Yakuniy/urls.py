@@ -24,6 +24,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('yakuniybaza/', admin.site.urls),
+    path('/', homeView),
     path('<slug:key>', bazaView)
 ]
 

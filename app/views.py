@@ -7,3 +7,8 @@ def bazaView(request, key):
         return redirect(f"{baza.baza.url}")
     except :
         return HttpResponse("Not Found")
+
+def homeView(request):
+    bazalar = Baza.objects.all()
+
+    return render(request, 'home.html', {"baza":bazalar})
