@@ -10,7 +10,7 @@ class Fanlar(models.Model):
 
 class Baza(models.Model):
     fan = models.ForeignKey(Fanlar, models.CASCADE)
-    baza = models.FileField(upload_to='baza savollar')
+    baza = models.FileField()
     description = models.TextField(null=True, blank=True)
 
     def __str__(self):
